@@ -157,8 +157,8 @@ def main():
     pygame.display.flip()
 
     # Prepare Game Objects
-    whiff_sound = load_sound("miau.wav")
-    punch_sound = load_sound("miau2.wav")
+    whiff_sound = load_sound("miau2.wav")
+    punch_sound = load_sound("miau.wav")
     chimp = Chimp()
     fist = Fist()
     allsprites = pygame.sprite.RenderPlain((chimp, fist))
