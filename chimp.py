@@ -17,7 +17,7 @@ if not pygame.mixer:
     print("Warning, sound disabled")
 
 main_dir = os.path.split(os.path.abspath(__file__))[0]
-data_dir = os.path.join(main_dir, "C:/Users/marco/Downloads/chimp")
+data_dir = os.path.join(main_dir, "/home/pi/Desktop/PyQt_Codec/chimp")
 
 
 # functions to create our resources
@@ -149,7 +149,7 @@ def main():
     if pygame.font:
         font = pygame.font.Font(None, 36)
         text = font.render("TE2003B Diseño de sistemas en chip", True, (10, 10, 10))
-        textpos = text.get_rect(centerx=background.get_width() / 2)
+        textpos = text.get_rect(centerx=background.get_width() // 2)
         background.blit(text, textpos)
 
     # Display The Background
